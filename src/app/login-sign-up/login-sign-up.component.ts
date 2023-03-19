@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Users } from './Users';
 
 @Component({
@@ -8,6 +9,8 @@ import { Users } from './Users';
   styleUrls: ['./login-sign-up.component.css']
 })
 export class LoginSignUpComponent {
+  constructor(private router: Router) { }
+
   boolLogin = true;
 
   displayLogin() {
@@ -30,6 +33,7 @@ export class LoginSignUpComponent {
 
     if (obj != null && this.strLoginPwd.value === obj.pwd) {
       alert("Login Successfully");
+      this.router.navigate(['/Home']);
     }
     else {
       alert("Invalid Crediantials");
