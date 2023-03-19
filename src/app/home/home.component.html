@@ -92,20 +92,23 @@
                         <th></th>
                     </thead>
                     <tr>
-                        <td>
-                            <img style="float: left;" [src]="adoptionImages[0+3*(page-1)]" alt="">
-                            <h3>Cat</h3>
-                            <p>Adopt Please</p>
+                        <td class="col-4">
+                            <img style="float: left; height: 150px; width: 200px;" [src]="arrAnimals[0+3*(page-1)].img"
+                                alt="">
+                            <h3>{{arrAnimals[0+3*(page-1)].name}}</h3>
+                            <p>{{arrAnimals[0+3*(page-1)].desc}}</p>
                         </td>
-                        <td>
-                            <img style="float: left;" [src]="adoptionImages[1+3*(page-1)]" alt="">
-                            <h3>Dog</h3>
-                            <p>Adopt Please</p>
+                        <td class="col-4">
+                            <img style="float: left; height: 150px; width: 200px;" [src]="arrAnimals[1+3*(page-1)].img"
+                                alt="">
+                            <h3>{{arrAnimals[1+3*(page-1)].name}}</h3>
+                            <p>{{arrAnimals[1+3*(page-1)].desc}}</p>
                         </td>
-                        <td>
-                            <img style="float: left;" [src]="adoptionImages[2+3*(page-1)]" alt="">
-                            <h3>Dogs</h3>
-                            <p>Adopt Please</p>
+                        <td class="col-4">
+                            <img style="float: left; height: 150px; width: 200px;" [src]="arrAnimals[2+3*(page-1)].img"
+                                alt="">
+                            <h3>{{arrAnimals[2+3*(page-1)].name}}</h3>
+                            <p>{{arrAnimals[2+3*(page-1)].desc}}</p>
                         </td>
                     </tr>
                 </table>

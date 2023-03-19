@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Animal } from './Animal';
 
 @Component({
   selector: 'app-home',
@@ -20,4 +21,13 @@ export class HomeComponent {
     }
   ]
   page = 1;
+
+  arrAnimals = [
+    new Animal('Felix', './assets/carousel1_img1.jpg', 'Felix is a shy Orange tabby cat looking for a home.'),
+    new Animal('Gorgi', './assets/carousel1_img2.jpg', 'Gorgi is a Macaw parrot able to talk like human, native to East Asia.'),
+    new Animal('Sky', './assets/carousel1_img3.jpg', 'Sky is a faithfull German Shephard dog currently looking for new owner.'),
+    new Animal('Bubble & Psy', './assets/carousel1_img4.jpg', 'Bubble & Psy are sibling puppies of labrador breed.'),
+    new Animal('Holy', './assets/carousel1_img5.jpg', 'Holy is a very playful black cat with grey pattern.'),
+    new Animal('Happy', './assets/carousel1_img6.jpg', 'Happy is a Beaver who loves to chew on wood.')
+  ]
 }

@@ -7,7 +7,7 @@ import { LoginSignUpComponent } from './login-sign-up/login-sign-up.component';
 import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: LoginSignUpComponent },
   { path: 'Home', component: HomeComponent },
   { path: 'Services', component: ServicesComponent },
   { path: 'About-Us', component: AboutUsComponent },
