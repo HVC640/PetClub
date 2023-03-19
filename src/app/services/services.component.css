@@ -1,0 +1,5 @@
+.bg-testimonial {
+    background: url("/../assets/testimonial.jpg") top left no-repeat;
+    background-size: cover;
+    height: inherit;
+}

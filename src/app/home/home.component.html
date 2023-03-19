@@ -1,0 +1,152 @@
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img style="width: 100%; height: 500px;" [src]="images[0]" alt="Random first slide" />
+        </div>
+        <div class="carousel-caption">
+            <h3>Happy Treat</h3>
+            <p>Happy Dog Has Happy Treat.</p>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img style="width: 100%; height: 500px;" [src]="images[1]" alt="Random second slide" />
+        </div>
+        <div class="carousel-caption">
+            <h3>Edgerd Cooper</h3>
+            <p>Now Available !</p>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img style="width: 100%; height: 500px;" [src]="images[2]" alt="Random third slide" />
+        </div>
+        <div class="carousel-caption">
+            <h3>Check Your Pet's Health</h3>
+            <p>Get Your Best Friend's Health Checked.</p>
+        </div>
+    </ng-template>
+</ngb-carousel>
+
+<div class="container-fluid" style="background-color: honeydew;">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-5">
+            <h2 class="head-blue mt-4">Welcome to Our Site</h2>
+            <br>
+            <div class="row">
+                <div class="col-4"><img src="./assets/page1_img5.jpg" style="height: 100px; width: 150px;"></div>
+                <div class="col-8">We believe we can make the world a better place for pets and their people by creating
+                    & bringing the best products and experiences that foster the health and happiness of pets
+                    everywhere.</div>
+            </div><br>
+            <div style="float: left;">
+                We’re thriving to become India’s most trusted and convenient online destination for pet parents and our
+                partners. Our success is measured by the happiness of the pets we serve.
+                <br><br>
+                Our vision is to build a holistic technology based platform for pet parents to enjoy products & services
+                under one roof seamlessly as we believe in serving the pet community at-large by bridging gaps &
+                bringing community closer.
+            </div>
+            <br>
+        </div>
+        <div class="col-5">
+            <h2 class="head-blue mt-4">Latest News</h2>
+            <ul *ngFor="let news of arrNews" style="list-style: none;">
+                <li>
+                    <span>
+                        <time>{{news.dt}}<span>{{news.mt}}</span></time>
+                    </span>
+                    <div>
+                        <div><a href="{{news.link}}" target="_blank">{{news.a}}</a>&nbsp;
+                            <time>{{news.time}}</time>
+                        </div>
+                        {{news.div}}
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>
+
+<div class="container-fluid bg-light" style="min-height: 250px;">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3 mt-4">
+                <h3>Pet For Adoption</h3>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-2 mt-4"><ngb-pagination style="float:center;" [collectionSize]="6" [pageSize]="3"
+                    [(page)]="page" [directionLinks]="false"></ngb-pagination>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tr>
+                        <td>
+                            <img style="float: left;" [src]="adoptionImages[0+3*(page-1)]" alt="">
+                            <h3>Cat</h3>
+                            <p>Adopt Please</p>
+                        </td>
+                        <td>
+                            <img style="float: left;" [src]="adoptionImages[1+3*(page-1)]" alt="">
+                            <h3>Dog</h3>
+                            <p>Adopt Please</p>
+                        </td>
+                        <td>
+                            <img style="float: left;" [src]="adoptionImages[2+3*(page-1)]" alt="">
+                            <h3>Dogs</h3>
+                            <p>Adopt Please</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="min-height: 300px; background-color: honeydew;">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col">
+            <h2 class="head-blue mt-4">Pet Care Tips</h2><br>
+            <p>Just like you, your pet can get heart problems, develop arthritis, or have a toothache. The best way to
+                prevent such problems or catch them early is to see your veterinarian every year.
+                <br>
+                Regular exams are the single most important way to keep pets healthy. Annual vet visits should touch on
+                nutrition and weight control, as well as cover recommended vaccinations, parasite control, dental exam,
+                and health screenings.
+            </p>
+        </div>
+        <div class="col-1"></div>
+        <div class="col">
+            <div class="col">
+                <div class="row">
+                    <h2 class="head-blue mt-4">Any Question?</h2>
+                </div><br>
+                <div class="row">
+                    <div class="col-3"><img style="width: 125px; height: 100px;" src="./assets/page1_img4.jpg"></div>
+                    <div class="col-9">
+                        <h4>Call Us Free !</h4> Ph No : <span class="head-blue">+1 800
+                            559 6580</span>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    Please give us a call, send us an email or fill out our contact form to get a hold of us. We are
+                    happy to assist you!
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>

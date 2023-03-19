@@ -1,0 +1,94 @@
+<div class="container-fluid">
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded" src="/../assets/about.jpg"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="border-start border-5 border-primary ps-5 mb-5">
+                        <h6 class="text-primary text-uppercase">About Us</h6>
+                        <h1 class="display-5 text-uppercase mb-0">We Keep Your Pets Happy All Time</h1>
+                    </div>
+                    <h4 class="text-body mb-4">Being a pet parent is one of the most challenging yet rewarding
+                        experiences. And as responsible pet parents, we all want our furry families to live their best
+                        lives with us. But how does one start on this unknown journey and what route does one follow?
+                        There are millions of questions that come to our mind and we often struggle to find the answers.
+                    </h4>
+                    <div class="bg-light p-4">
+                        <ul class="nav nav-pills justify-content-between mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item w-50">
+                                <button class="nav-link text-uppercase w-100 active" type="button"
+                                    (click)="hideVision()">Our
+                                    Mission</button>
+                            </li>
+                            <li class="nav-item w-50">
+                                <button class="nav-link text-uppercase w-100" type="button" (click)="hideMission()">Our
+                                    Vission</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <p class="mb-0" [ngClass]="(boolMission == true)?'vison-hide' : 'mission-hide'"
+                                style="float: left; position: absolute; width: 47%;">We are here to be
+                                your ultimate pet parenting partner. From the basics 'how-tos' to building experiences
+                                to make our pet’s lives richer, we have gathered
+                                years of expertise and knowledge together in one place to provide you a personalised
+                                experience.
+                            </p>
+                            <p class="mb-0" [ngClass]="(boolMission == false)?'vison-hide' : 'mission-hide'"
+                                style="float: left; position: absolute; width: 47%;">We aim to become the best pet
+                                service provider, who not
+                                only provides
+                                services to thier customers but also a good memory to their pets.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
+                <h1 class="display-4 mb-4"><span class="text-primary">Boarding</span> & <span
+                        class="text-secondary">Daycare</span></h1>
+                <h5 class="text-muted mb-3">They were far from providing a loving, stress free atmosphere. Pets were
+                    being held in caged environments, subjected to inexperienced carers and did not inspire any
+                    confidence. We knew that we had to step in and make a change.</h5>
+                <p class="mb-4">Our pet care services brings together the biggest ecosystem of trusted, local,
+                    affordable pet care service providers from Bangalore’s leading pet loving community that are vetted
+                    and certified to address your pet care needs. We’re on a journey to simplify pet parenting by
+                    offering all services dedicated to taking care of the lil ones.</p>
+                <ul class="list-inline">
+                    <li>
+                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>Best In Industry</h5>
+                    </li>
+                    <li>
+                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>Emergency Services</h5>
+                    </li>
+                    <li>
+                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>24/7 Customer Support</h5>
+                    </li>
+                </ul>
+                <a href="/Services" class="btn btn-lg btn-primary mt-3 px-4">Learn More</a>
+            </div>
+            <div class="col-lg-5">
+                <div class="row px-3">
+                    <div class="col-12 p-0">
+                        <img class="img-fluid w-100" src="/../assets/about-1.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img class="img-fluid w-100" src="/../assets/about-2.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img class="img-fluid w-100" src="/../assets/about-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
