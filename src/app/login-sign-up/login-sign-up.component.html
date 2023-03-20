@@ -2,6 +2,7 @@
 
     <ng-container *ngIf="boolLogin==true; then displayLoginForm; else displayRegisterForm;"></ng-container>
 
+    <!--Login Form Start-->
     <ng-template #displayLoginForm>
         <div class="row">
             <div class=" col-4"></div>
@@ -37,7 +38,9 @@
             <div class="col-3"></div>
         </div>
     </ng-template>
+    <!--Login Form End-->
 
+    <!--Register Form Start-->
     <ng-template #displayRegisterForm>
         <div class="row">
             <div class=" col-4"></div>
@@ -87,6 +90,6 @@
             <div class="col-3"></div>
         </div>
     </ng-template>
-
+    <!--Register Form End-->
 
 </div>

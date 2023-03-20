@@ -11,6 +11,7 @@ import { Users } from './Users';
 export class LoginSignUpComponent {
   constructor(private router: Router) { }
 
+  //variable for displaying login and register form.
   boolLogin = true;
 
   displayLogin() {
@@ -21,6 +22,7 @@ export class LoginSignUpComponent {
     this.boolLogin = false;
   }
 
+  //users database.
   arrUsers = [
     new Users('admin', 'admin@wissen.com', 'admin'),
     new Users('harsh', 'harsh@wissen.com', 'harsh')
@@ -28,6 +30,7 @@ export class LoginSignUpComponent {
   strLoginUname = new FormControl('');
   strLoginPwd = new FormControl('');
 
+  //login method.
   submitLogin() {
     let obj: any = this.arrUsers.find(o => o.uname === this.strLoginUname.value);
 
@@ -44,6 +47,7 @@ export class LoginSignUpComponent {
   strRegisterEmail = new FormControl('');
   strRegisterPwd = new FormControl('');
   strRegisterRepeatPwd = new FormControl('');
+  //register method.
   submitRegister() {
     if (this.strRegisterUname.value != '' && this.strRegisterEmail.value != '' && this.strRegisterPwd.value != '' && this.strRegisterPwd.value === this.strRegisterRepeatPwd.value) {
       this.arrUsers.push(new Users(this.strRegisterUname.value, this.strRegisterEmail.value, this.strRegisterPwd.value));

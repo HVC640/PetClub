@@ -6,14 +6,15 @@ import { HomeComponent } from './home/home.component';
 import { LoginSignUpComponent } from './login-sign-up/login-sign-up.component';
 import { ServicesComponent } from './services/services.component';
 
+//Adding The Routes
 const routes: Routes = [
-  { path: '', component: LoginSignUpComponent },
+  { path: '', component: HomeComponent },
   { path: 'Home', component: HomeComponent },
   { path: 'Services', component: ServicesComponent },
   { path: 'About-Us', component: AboutUsComponent },
   { path: 'Contact-Us', component: ContactUsComponent },
   { path: 'Login/SignUp', component: LoginSignUpComponent },
-  { path: '**', component: HomeComponent }
+  { path: '**', component: LoginSignUpComponent }
 ];
 
 @NgModule({

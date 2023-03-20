@@ -1,4 +1,4 @@
-export class Subcriber {
+export class Subcriber {    //class of Subscriber.
     name!: string | null;
     email!: string | null;
     pet!: string | null;

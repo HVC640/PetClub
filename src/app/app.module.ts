@@ -14,6 +14,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LoginSignUpComponent } from './login-sign-up/login-sign-up.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+//Importing Modules.
 @NgModule({
   declarations: [
     AppComponent,

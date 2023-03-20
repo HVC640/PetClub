@@ -1,3 +1,4 @@
+<!--Carousel Start-->
 <ngb-carousel *ngIf="images">
     <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
@@ -27,9 +28,12 @@
         </div>
     </ng-template>
 </ngb-carousel>
+<!--Carousel End-->
 
+<!--Welcome and News Start-->
 <div class="container-fluid" style="background-color: honeydew;">
     <div class="row">
+        <!--Welcome Start-->
         <div class="col-1"></div>
         <div class="col-5">
             <h2 class="head-blue mt-4">Welcome to Our Site</h2>
@@ -50,6 +54,9 @@
             </div>
             <br>
         </div>
+        <!--Welcome End-->
+
+        <!--News Start-->
         <div class="col-5">
             <h2 class="head-blue mt-4">Latest News</h2>
             <ul *ngFor="let news of arrNews" style="list-style: none;">
@@ -67,9 +74,12 @@
             </ul>
         </div>
         <div class="col-1"></div>
+        <!--News End-->
     </div>
 </div>
+<!--Welcome and News End-->
 
+<!--Adoption Start-->
 <div class="container-fluid bg-light" style="min-height: 250px;">
     <div class="col-12">
         <div class="row">
@@ -117,7 +127,9 @@
         </div>
     </div>
 </div>
+<!--Adoption End-->
 
+<!--Pet Care Tips Start-->
 <div class="container-fluid" style="min-height: 300px; background-color: honeydew;">
     <div class="row">
         <div class="col-1"></div>
@@ -153,3 +165,4 @@
         <div class="col-1"></div>
     </div>
 </div>
+<!--Pet Care Tips End-->

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent {
+  //Testimonial Images.
   images = ['/../assets/testimonial-1.jpg', '/../assets/testimonial-2.jpg']
 }

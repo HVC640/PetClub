@@ -1,4 +1,4 @@
-export class Animal {
+export class Animal {   //Class for Animals.
     name!: string | null;
     img!: string | null;
     desc!: string | null;

@@ -1,4 +1,4 @@
-export class Users {
+export class Users {    //class for users.
     uname!: string | null;
     email!: string | null;
     pwd!: string | null;
