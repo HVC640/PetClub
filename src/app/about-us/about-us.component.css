@@ -5,3 +5,22 @@
 .vision-hide {
     display: none;
 }
+
+.div-img {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 20%;
+}
+
+img.hvr {
+    transition: transform .2s;
+    margin: 0 auto;
+    background-color: rgb(173, 173, 237);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+img.hvr:hover {
+    transform: scale(1.1);
+}

@@ -13,7 +13,7 @@ import { Users } from './login-sign-up/Users';
 export class AppComponent {
   title = 'Website';
 
-  boolLoginSuccess = false;
+  boolLoginSuccess = true;
 
   logout() {
     this.boolLoginSuccess = false;
