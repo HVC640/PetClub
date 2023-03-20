@@ -3,13 +3,13 @@
   <ng-container *ngIf="boolLoginSuccess==false; then displayLoginRegisterForm; else displayWebsite;"></ng-container>
 
   <ng-template #displayLoginRegisterForm>
-    <div class="container-fluid" style="background-color: honeydew; height: 768px;">
+    <div class="container-fluid" style="background-color: honeydew;">
 
       <ng-container *ngIf="boolLogin==true; then displayLoginForm; else displayRegisterForm;"></ng-container>
 
       <!--Login Form Start-->
       <ng-template #displayLoginForm>
-        <div class="row">
+        <div class="row mybg" style="height: 768px;">
           <div class=" col-4"></div>
           <div class="col-4">
             <h2 class="text-uppercase text-center mt-5 mb-5">Login To Your account</h2>
@@ -45,7 +45,7 @@
 
       <!--Register Form Start-->
       <ng-template #displayRegisterForm>
-        <div class="row">
+        <div class="row mybg" style="height: 768px;">
           <div class=" col-4"></div>
           <div class="col-4">
             <h2 class="text-uppercase text-center mt-5 mb-5">Create an account</h2>
