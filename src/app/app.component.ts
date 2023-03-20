@@ -45,7 +45,7 @@ export class AppComponent {
     let obj: any = this.arrUsers.find(o => o.uname === this.strLoginUname.value);
 
     if (obj != null && this.strLoginPwd.value === obj.pwd) {
-      alert("Login Successfully");
+      alert("Logged In Successfully");
       this.boolLoginSuccess = true;
       this.router.navigate(['/Home']);
     }
