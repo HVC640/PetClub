@@ -15,6 +15,10 @@ export class AppComponent {
 
   boolLoginSuccess = false;
 
+  logout() {
+    this.boolLoginSuccess = false;
+  }
+
   constructor(private router: Router) { }
 
   //variable for displaying login and register form.

@@ -101,7 +101,7 @@
     <header class="header bg-light" style="min-height:50px">
       <nav class=" nav nav-dark">
         <div class="container mt-2 mb-2">
-          <ul class="nav nav-pills">
+          <ul class="nav nav-pills" style="float: left;">
             <li class="nav-item">
               <a class="nav-link" routerLinkActive="active" routerLink="/Home">Pet Club</a>
             </li>
@@ -118,6 +118,7 @@
             <a class="nav-link" routerLinkActive="active" routerLink="/Login/SignUp">Login/SignUp</a>
           </li> -->
           </ul>
+          <button style="position:relative; float: right;" class="btn btn-danger" (click)="logout()">Logout</button>
         </div>
       </nav>
     </header>
